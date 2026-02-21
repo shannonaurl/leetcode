@@ -15,7 +15,7 @@ class Solution:
 
         for i in range(len(grid)): 
             for j in range(len(grid[0])): 
-                # if (i, j) not in visited and grid[i][j] == 1: 
+                if (i, j) not in visited and grid[i][j] == 1: 
                     max_area = max(max_area, dfs(i, j))
         
         return max_area
